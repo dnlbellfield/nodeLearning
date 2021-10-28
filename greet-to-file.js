@@ -1,9 +1,15 @@
 import { writeFile } from 'fs';
+// create var, set it to a funcion, which will be callable.
+const writeGreetingToFile = (name) => {
+  writeFile('greeting.txt', `Hello, ${name}`,(err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  })
 
-fs.writeFile('greeting.txt', "Hello World", err => console.log("Error occurred when writing the file.") )
+}
 
-
-
+// call it
+writeGreetingToFile("Daniel");
 
 // import { writeFile } from 'fs';
 // import { Buffer } from 'buffer';
