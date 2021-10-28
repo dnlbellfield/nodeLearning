@@ -1,0 +1,17 @@
+we are able to get a function from add.js
+and then call it from first.js, in the file 
+that's actually requiring it and this is 
+using a combination of exports and require 
+
+add.js
+    exports.add = (a,b) => a + b;
+  
+first.js  destructed notation
+    var { add } = require('./add.js');
+    console.log(add(1,2));
+  
+
+ first.js calling an object property
+    var alias = require('./add.js');
+    console.log(alias.add(1,2));
+ 
