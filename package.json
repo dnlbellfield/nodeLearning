@@ -1,6 +1,7 @@
 {
   "name": "nodeintro",
   "version": "1.0.0",
+  "type": "module",
   "description": "node stuff ",
   "main": "add.js",
   "scripts": {
